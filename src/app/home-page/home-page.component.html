@@ -1,125 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toxic Souls</title>
     <!-- FONT AWESONE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <!-- FONT OSWALD -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./home-page.component.css">
+    <link rel="stylesheet" href="./home-page.component.css" />
     <!-- BOOTSTRAP -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="menu-btn">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </div>
 
     <nav class="nav-main">
-        <img src="../../assets/img/logo_header.png" alt="DominatedLanguages Logo" class="nav-brand">
-        <ul class="nav-menu">
-            <li>
-                <a href="#">Eventos</a>
-            </li>
-            <li>
-                <a href="#">Artistas</a>
-            </li>
-            <li>
-                <a href="#">Musica</a>
-            </li>
-            <li>
-                <a href="#">Estadisticas</a>
-            </li>
-        </ul>
+      <!-- <img src="../../assets/img/logo_header.png" alt="DominatedLanguages Logo" class="nav-brand"> -->
+      <ul class="nav-menu">
+        <li>
+          <a href="#">Eventos</a>
+        </li>
+        <li>
+          <a href="#">Artistas</a>
+        </li>
+        <li>
+          <a href="#">Musica</a>
+        </li>
+        <li>
+          <a href="#">Estadisticas</a>
+        </li>
+      </ul>
 
-        <form routerLink="/login" method="post">
-            <input id="Sign" type="submit" value="Ingresar" >
-        </form>
+      <form routerLink="/sign-up" method="post">
+        <input id="Sign" type="submit" value="Registrar" />
+      </form>
     </nav>
 
     <div class="container">
+      <!-- SHOWCASE -->
 
-
-        <!-- SHOWCASE -->
-
-        <!-- ----------------------------------------------------------------------- -->
-        <!--                                 SLIDER                                  -->
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <img src="../../assets/img/slide1.jpg" style="width: 100%;" />
-                <div class="text">
-                    <h2>Evento 1</h2>
-                    <p>
-                        Protege 
-                    </p>
-                    <a href="#" class="btn">More<i class="fas fa-angle-double-right"></i>></a>
-                </div>
-            </div>
-
-            <div class="mySlides">
-                <img src="../../assets/img/slide2.jpg" style="width: 100%" />
-                <div class="text">
-                    <h2>Evento 2</h2>
-                    <p>
-                        Conoce los lenguajes
-                    </p>
-                    <a href="#" class="btn">More <i class="fas fa-angle-double-right"></i></a>
-                </div>
-            </div>
-
-            <div class="mySlides">
-                <img src="../assets/img/slide4.jpg" style="width: 100%" />
-                <div class="text">
-                    <h2>Evento 3</h2>
-                    <p>
-                        Info
-                    </p>
-                    <a href="#" class="btn">More <i class="fas fa-angle-double-right"></i></a>
-                </div>
-            </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 SLIDER                                  -->
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="../../assets/img/slide1.jpg" style="width: 100%" />
+          <div class="text">
+            <h2>Evento 1</h2>
+            <p>Protege</p>
+            <a href="#" class="btn"
+              >More<i class="fas fa-angle-double-right"></i>></a
+            >
+          </div>
         </div>
-        <!-- <br /> -->
 
-        <div style="text-align: center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div class="mySlides">
+          <img src="../../assets/img/slide2.jpg" style="width: 100%" />
+          <div class="text">
+            <h2>Evento 2</h2>
+            <p>Conoce los lenguajes</p>
+            <a href="#" class="btn"
+              >More <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
         </div>
+
+        <div class="mySlides">
+          <img src="../assets/img/slide4.jpg" style="width: 100%" />
+          <div class="text">
+            <h2>Evento 3</h2>
+            <p>Info</p>
+            <a href="#" class="btn"
+              >More <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- <br /> -->
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </div>
 
     <!-- ----------------------------------------------------------------------- -->
     <!--                               MATERIALIZE SCRIPTS                               -->
 
     <script>
-        var slideIndex = 0;
-        showSlides();
+      var slideIndex = 0;
+      showSlides();
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
         }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
     </script>
 
     <!-- <header class="showcase">
@@ -130,73 +132,77 @@
             </a>
                     </header> -->
 
-                    <!-- NEW CARDS -->
+    <!-- NEW CARDS -->
 
-                    <div class="new-cards">
-                        <div>
-                            <img src="../../assets/img/artista1.jpg" alt="News 1">
-                            <h3>Artista 1</h3>
-                            <p>Info </p>
-                        </div>
+    <div class="new-cards">
+      <div>
+        <img src="../../assets/img/artista1.jpg" alt="News 1" />
+        <h3>Artista 1</h3>
+        <p>Info</p>
+      </div>
 
-                        <div>
-                            <img src="../../assets/img/artista2.jpg" alt="News 2">
-                            <h3>Artista 2</h3>
-                            <p>Info
-                            </p>
-                            <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
-                        </div>
+      <div>
+        <img src="../../assets/img/artista2.jpg" alt="News 2" />
+        <h3>Artista 2</h3>
+        <p>Info</p>
+        <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
+      </div>
 
-                        <div>
-                            <img src="../../assets/img/artista3.jpg" alt="News 3">
-                            <h3>Artista 3</h3>
-                            <p>Info</p>
-                            <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
-                        </div>
+      <div>
+        <img src="../../assets/img/artista3.jpg" alt="News 3" />
+        <h3>Artista 3</h3>
+        <p>Info</p>
+        <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
+      </div>
 
-                        <div>
-                            <img src="../../assets/img/artista4.jpg" alt="News 4">
-                            <h3>Artista 4</h3>
-                            <p>Info
-                            </p>
-                            <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
-                        </div>
-                    </div>
+      <div>
+        <img src="../../assets/img/artista4.jpg" alt="News 4" />
+        <h3>Artista 4</h3>
+        <p>Info</p>
+        <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
+      </div>
+    </div>
 
+    <section class="cards-banner-one">
+      <div class="content">
+        <h2>5 festivales de musica electronica que debes conocer</h2>
+        <p>
+          Si eres amante de la musica electronica seguramente has escuchado
+          algunos de estos festivales
+        </p>
+        <a
+          href="https://www.dondeir.com/musica/5-festivales-de-musica-electronica/2017/11/"
+          class="btn"
+          >Read more <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+    </section>
 
-                    <section class="cards-banner-one">
-                        <div class="content">
-                            <h2>5 festivales de musica electronica que debes conocer</h2>
-                            <p>Si eres amante de la musica electronica seguramente has escuchado algunos de estos festivales</p>
-                            <a href="https://www.dondeir.com/musica/5-festivales-de-musica-electronica/2017/11/" class="btn">Read more <i class="fas fa-angle-double-right"></i></a>
-                        </div>
-                    </section>
+    <audio
+      src="../../assets/music/track1.mp3"
+      controls="controls"
+      type="audio/mpeg"
+      preload="preload"
+      class="playlist"
+    ></audio>
 
+    <section class="social">
+      <p>Follow ToxicSouls</p>
+      <div class="links">
+        <a href="">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
 
-                    <audio src="../../assets/music/track1.mp3" controls="controls" type="audio/mpeg" preload="preload" class="playlist">
-                    </audio>
-                
-                    <section class="social">
-                        <p>Follow ToxicSouls</p>
-                        <div class="links">
-                            <a href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </section>
-                
-
-                
-
-                <footer class="footer">
-                    <h3>ToxicSouls Copyright 2021 &copy;</h3>
-                </footer>
-</body>
-
+    <footer class="footer">
+      <h3>ToxicSouls Copyright 2021 &copy;</h3>
+    </footer>
+  </body>
 </html>

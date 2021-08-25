@@ -6,26 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthUserComponent } from './auth-user/auth-user.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { NavsMenuComponent } from './navs-menu/navs-menu.component';
 
-const appRoutes: Routes = [
-  {path:'login',component:AuthUserComponent},
-  {path:'homepage',component:HomePageComponent},
-  {path: '',
-    redirectTo:'/homepage',
-    pathMatch:'full'
-  }
-];
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthUserComponent,
-    HomePageComponent
+    HomePageComponent,
+    NavsMenuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

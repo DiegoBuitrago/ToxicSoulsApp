@@ -1,0 +1,40 @@
+body {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 79px 0px;
+
+}
+
+/* menu grande */
+/* Auto Layout */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 50px;
+
+  position: absolute;
+  width: 301px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+
+  background: #262626;
+  /* box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25); */
+}
+
+/* menu_principal */
+.menuprincipal .flex-column{
+  position: absolute;
+  width: 105.73px;
+  height: 203.76px;
+  left: 70px;
+  top: 250px;
+  font-family:  Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 70px;
+  color: #79CBBD;
+}

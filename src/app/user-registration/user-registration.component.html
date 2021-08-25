@@ -1,0 +1,49 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToxicSouls</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="user-registration.component.css">
+  <script type="text/javascript" src="../../../node_modules/jquery/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="register-box">
+    <img src="../../assets/img/logoTS.png" class="avatar" alt="Avatar Image">
+    <h1>Register</h1>
+    <form action="menuOpciones.html" method="POST">
+      <!-- DOCUMENT INPUT -->
+      <label for="document">Document</label>
+      <input id="document" name="document" type="text" placeholder="Enter Document">
+      <!-- USERNAME INPUT -->
+      <label for="username">Username</label>
+      <input id="user" name="user" type="text" placeholder="Enter Username">
+      <!-- EMAIL INPUT -->
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text" placeholder="Enter Email">
+      <!-- PASSWORD INPUT -->
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Enter Password">
+      <!-- <input type="submit" value="Log In" onclick="location.href='/menu.html'"> -->
+      <input id="boton-guardar" type="submit" value="Create account">
+    </form>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('#boton-guardar').click(function () {
+        /*Captura de datos escrito en los inputs*/
+        var nom = document.getElementById("user").value;
+        var apel = document.getElementById("pass").value;
+        /*Guardando los datos en el LocalStorage*/
+        sessionStorage.setItem("Usuario", nom);
+        sessionStorage.setItem("Contrasenia", apel);
+        /*Limpiando los campos o inputs*/
+        // document.getElementById("user").value = "";
+        // document.getElementById("pass").value = "";
+      });
+    });
+
+  </script>
+</body>
+

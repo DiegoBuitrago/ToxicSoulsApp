@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToxicSouls</title>
+    <link rel="stylesheet" href="navs-menu.component.css" />
+  </head>
+
+  <!-- Menu Gris-->
+  <div class="menu">
+    <!-- Items del menu-->
+    <!--LOGO-->
+    <div id = "logo">
+      <img src = "../../assets/img/logo_header.png"  width="200" height="150" />
+    </div>
+
+    <div class="menuprincipal">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Eventos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >PlayList</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" >Noticias</a>
+        </li>
+        <div class = "menu_ayuda">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" >Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >Ayuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="[ '/login']">Administración</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</html>
