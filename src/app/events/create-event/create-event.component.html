@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toxic Souls</title>
+  <!-- FONT AWESONE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- FONT OSWALD -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./create-event.component.css">
+  <!-- BOOTSTRAP -->
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="nav-main">
+    <img src="../../assets/img/logo_header.png" alt="DominatedLanguages Logo" class="nav-brand">
+    <ul class="nav-menu">
+      <li>
+        <a href="#">Crear Evento</a>
+      </li>
+      <li>
+        <a href="#">Modificar Evento</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- <form routerLink="/login" method="post">
+      <input id="Sign" type="submit" value="Ingresar">
+    </form>
+  </nav> -->
+  <h1>Crear Evento</h1>
+
+  <form (ngSubmit)="addContact()" method="POST" enctype="multipart/form-data" >
+    <div class="form-item-image">
+      <img [src]="model.picture">
+      <input type="file" accept=".png,.jpg,.jpeg" (change)=addImage($event)>
+    </div>
+    <div class="form-item">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="model.name" required>
+    </div>
+    <div class="form-item">
+      <label for="dateEvent">Fecha evento:</label>
+      <input type="text" id="eventDate" name="dateEvent" [(ngModel)]="model.dateEvent" required>
+    </div>
+    <div class="form-item">
+      <label for="price">Precio de preventa:</label>
+      <input type="text" id="price" name="price" [(ngModel)]="model.price" required>
+    </div>
+    <div class="form-item">
+      <label for="hour">Hora:</label>
+      <input type="text" id="hour" name="hour" [(ngModel)]="model.hour">
+    </div>
+    <div class="form-item">
+      <label for="city">Ciudad:</label>
+      <input type="text" id="city" name="city" [(ngModel)]="model.city">
+    </div>
+    <div class="form-item">
+      <label for="direction">Direccion:</label>
+      <input type="text" id="direction" name="direction" [(ngModel)]="model.direction">
+    </div>
+    <div class="form-item">
+      <label for="description">Descripcion del evento:</label>
+      <input type="text" id="description" name="description" [(ngModel)]="model.description">
+    </div>
+    <button class="form-button" type="submit">Add Event</button>
+  </form>
+
+  <pre>{{model | json}}</pre>
+
+  <footer class="footer">
+    <h3>ToxicSouls Copyright 2021 &copy;</h3>
+  </footer>
+
+</body>
+
+</html>
+
