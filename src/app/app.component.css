@@ -1,1 +1,22 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1500px;
+    margin: .0em auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .5em;
+  }
+  
+  .container .home {
+    grid-column: 2/6;
+  }
+  
+ .container .navs-main{
+     width: 200px;
+ }    

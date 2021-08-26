@@ -1,130 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toxic Souls</title>
-    <!-- FONT AWESONE -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <!-- FONT OSWALD -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./home-page.component.css" />
-    <!-- BOOTSTRAP -->
-  </head>
 
-  <body>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toxic Souls</title>
+  <!-- FONT AWESONE -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- FONT OSWALD -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet" />
+  <!-- SCROLL REVEAL -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="./home-page.component.css" />
+  <!-- BOOTSTRAP -->
+  <script src="./slide.js"></script>
+</head>
+
+<body>
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Menu Gris-->
+  <div class="menu">
+    <!-- Items del menu-->
+    <!--LOGO-->
+    <div id = "logo">
+      <img src = "../../assets/img/logo_header.png"  width="200" height="150" />
     </div>
 
-    <nav class="nav-main">
-      <!-- <img src="../../assets/img/logo_header.png" alt="DominatedLanguages Logo" class="nav-brand"> -->
-      <ul class="nav-menu">
-        <li>
-          <a href="#">Eventos</a>
+    <div class="menuprincipal">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" >Home</a>
         </li>
-        <li>
-          <a href="#">Artistas</a>
+        <li class="nav-item">
+          <a class="nav-link" >Eventos</a>
         </li>
-        <li>
-          <a href="#">Musica</a>
+        <li class="nav-item">
+          <a class="nav-link" >PlayList</a>
         </li>
-        <li>
-          <a href="#">Estadisticas</a>
+        <li class="nav-item">
+          <a class="nav-link" >Noticias</a>
         </li>
+        <div class = "menu_ayuda">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" >Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >Ayuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="[ '/login']">Administración</a>
+          </li>
+        </div>
       </ul>
-
-      <form routerLink="/sign-up" method="post">
-        <input id="Sign" type="submit" value="Registrar" />
-      </form>
-    </nav>
-
-    <div class="container">
-      <!-- SHOWCASE -->
-
-      <!-- ----------------------------------------------------------------------- -->
-      <!--                                 SLIDER                                  -->
-      <div class="slideshow-container">
-        <div class="mySlides">
-          <img src="../../assets/img/slide1.jpg" style="width: 100%" />
-          <div class="text">
-            <h2>Evento 1</h2>
-            <p>Protege</p>
-            <a href="#" class="btn"
-              >More<i class="fas fa-angle-double-right"></i>></a
-            >
-          </div>
-        </div>
-
-        <div class="mySlides">
-          <img src="../../assets/img/slide2.jpg" style="width: 100%" />
-          <div class="text">
-            <h2>Evento 2</h2>
-            <p>Conoce los lenguajes</p>
-            <a href="#" class="btn"
-              >More <i class="fas fa-angle-double-right"></i
-            ></a>
-          </div>
-        </div>
-
-        <div class="mySlides">
-          <img src="../assets/img/slide4.jpg" style="width: 100%" />
-          <div class="text">
-            <h2>Evento 3</h2>
-            <p>Info</p>
-            <a href="#" class="btn"
-              >More <i class="fas fa-angle-double-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <!-- <br /> -->
-
-      <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
     </div>
+  </div>
+
+  <nav class="nav-main">
+    <!-- <img src="../../assets/img/logo_header.png" alt="DominatedLanguages Logo" class="nav-brand"> -->
+    <ul class="nav-menu">
+      <li>
+        <a href="#">Eventos</a>
+      </li>
+      <li>
+        <a href="#">Artistas</a>
+      </li>
+      <li>
+        <a href="#">Musica</a>
+      </li>
+      <li>
+        <a href="#">Estadisticas</a>
+      </li>
+    </ul>
+
+    <form routerLink="/sign-up" method="post">
+      <input id="Sign" type="submit" value="Registrar" />
+    </form>
+  </nav>
+
+  <div class="container">
+    <!-- SHOWCASE -->
 
     <!-- ----------------------------------------------------------------------- -->
-    <!--                               MATERIALIZE SCRIPTS                               -->
+    <!--                                 SLIDER                                  -->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="../../assets/img/slide1.jpg" style="width: 100%" />
+        <div class="text">
+          <h2>Evento 1</h2>
+          <p>Protege</p>
+          <a href="#" class="btn">More<i class="fas fa-angle-double-right"></i>></a>
+        </div>
+      </div>
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
+      <div class="mySlides">
+        <img src="../../assets/img/slide2.jpg" style="width: 100%" />
+        <div class="text">
+          <h2>Evento 2</h2>
+          <p>Conoce los lenguajes</p>
+          <a href="#" class="btn">More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 3000); // Change image every 2 seconds
-      }
-    </script>
+      <div class="mySlides">
+        <img src="../assets/img/slide4.jpg" style="width: 100%" />
+        <div class="text">
+          <h2>Evento 3</h2>
+          <p>Info</p>
+          <a href="#" class="btn">More <i class="fas fa-angle-double-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- <br /> -->
 
-    <!-- <header class="showcase">
+    <div style="text-align: center" class="slide">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                               MATERIALIZE SCRIPTS                               -->
+
+  <script src="./slide.js"> </script>
+
+  <!-- <header class="showcase">
             <h2>Big News Today</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem neque nesciunt, illum unde iste magni sunt, excepturi earum voluptatem in eos ad dolorum rem atque enim eligendi est debitis quae?
             </p>
@@ -132,77 +137,70 @@
             </a>
                     </header> -->
 
-    <!-- NEW CARDS -->
+  <!-- NEW CARDS -->
 
-    <div class="new-cards">
-      <div>
-        <img src="../../assets/img/artista1.jpg" alt="News 1" />
-        <h3>Artista 1</h3>
-        <p>Info</p>
-      </div>
-
-      <div>
-        <img src="../../assets/img/artista2.jpg" alt="News 2" />
-        <h3>Artista 2</h3>
-        <p>Info</p>
-        <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
-      </div>
-
-      <div>
-        <img src="../../assets/img/artista3.jpg" alt="News 3" />
-        <h3>Artista 3</h3>
-        <p>Info</p>
-        <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
-      </div>
-
-      <div>
-        <img src="../../assets/img/artista4.jpg" alt="News 4" />
-        <h3>Artista 4</h3>
-        <p>Info</p>
-        <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
-      </div>
+  <div class="new-cards">
+    <div>
+      <img src="../../assets/img/artista1.jpg" alt="News 1" />
+      <h3>Artista 1</h3>
+      <p>Info</p>
     </div>
 
-    <section class="cards-banner-one">
-      <div class="content">
-        <h2>5 festivales de musica electronica que debes conocer</h2>
-        <p>
-          Si eres amante de la musica electronica seguramente has escuchado
-          algunos de estos festivales
-        </p>
-        <a
-          href="https://www.dondeir.com/musica/5-festivales-de-musica-electronica/2017/11/"
-          class="btn"
-          >Read more <i class="fas fa-angle-double-right"></i
-        ></a>
-      </div>
-    </section>
+    <div>
+      <img src="../../assets/img/artista2.jpg" alt="News 2" />
+      <h3>Artista 2</h3>
+      <p>Info</p>
+      <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
+    </div>
 
-    <audio
-      src="../../assets/music/track1.mp3"
-      controls="controls"
-      type="audio/mpeg"
-      preload="preload"
-      class="playlist"
-    ></audio>
+    <div>
+      <img src="../../assets/img/artista3.jpg" alt="News 3" />
+      <h3>Artista 3</h3>
+      <p>Info</p>
+      <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
+    </div>
 
-    <section class="social">
-      <p>Follow ToxicSouls</p>
-      <div class="links">
-        <a href="">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </section>
+    <div>
+      <img src="../../assets/img/artista4.jpg" alt="News 4" />
+      <h3>Artista 4</h3>
+      <p>Info</p>
+      <!-- <a href="">Learn more <i class="fas fa-angle-double-right"></i></a> -->
+    </div>
+  </div>
 
-    <footer class="footer">
-      <h3>ToxicSouls Copyright 2021 &copy;</h3>
-    </footer>
-  </body>
+  <section class="cards-banner-one">
+    <div class="content">
+      <h2>5 festivales de musica electronica que debes conocer</h2>
+      <p>
+        Si eres amante de la musica electronica seguramente has escuchado
+        algunos de estos festivales
+      </p>
+      <a href="https://www.dondeir.com/musica/5-festivales-de-musica-electronica/2017/11/" class="btn">Read more <i
+          class="fas fa-angle-double-right"></i></a>
+    </div>
+  </section>
+
+  <audio src="../../assets/music/track1.mp3" controls="controls" type="audio/mpeg" preload="preload"
+    class="playlist"></audio>
+
+  <section class="social">
+    <p>Follow ToxicSouls</p>
+    <div class="links">
+      <a href="">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h3>ToxicSouls Copyright 2021 &copy;</h3>
+  </footer>
+</body>
+
 </html>

@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 12;
     padding: 0;
 }
 
@@ -41,16 +41,18 @@ ul {
     background-color: #2f3640;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23086b3b' fill-opacity='0.19' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     padding: 10px;
+    margin-left: 250px;
 }
 
 .playlist{
     align-items: center;
-    margin-left: 535px;
+    margin-left: 650px;
 }
 
 .nav-brand {
     width: 70px;
     margin-left: 10px;
+
 }
 
 
@@ -61,7 +63,9 @@ ul {
 }
 
 .nav-main ul li {
-    padding: 10px;
+    padding: 20px;
+    text-align: right
+    /* margin-left: 140px; */
 }
 
 .nav-main ul li a {
@@ -137,13 +141,14 @@ ul {
 /* Slideshow container */
 
 .slideshow-container {
-    width: 100%;
+    width: 80%;
     height: 450px;
     overflow-y: hidden;
     margin: auto;
     position: relative;
     margin-top: 3rem;
     margin-bottom: 20px;
+    margin-left: 258px;
 }
 
 
@@ -183,6 +188,9 @@ ul {
     transition: background-color 0.6s ease;
 }
 
+.slide{
+    margin-left: 300px;
+}
 .active {
     background-color: #717171;
 }
@@ -233,6 +241,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
     margin: 65px;
+    margin-left: 340px;
 }
 
 .new-cards img {
@@ -257,11 +266,12 @@ ul {
 /* CARD BANNER ONE */
 
 .cards-banner-one {
-    width: 90%;
+    width: 73%;
     height: 350px;
     background: url('../../assets/img/banner_3.jpg') no-repeat center center/cover;
     margin-bottom: 40px;
     margin: 65px;
+    margin-left: 312px;
 }
 
 .cards-banner-one .content {
@@ -279,6 +289,7 @@ ul {
 
 .social {
     margin: 50px;
+    margin-left: 307px;
 }
 
 .social p {
@@ -338,6 +349,7 @@ ul {
     padding: 20px 0;
     text-align: center;
     padding-bottom: 20px;
+    border-top: 4px solid #eee
 }
 
 #Sign {
@@ -415,4 +427,42 @@ ul {
         margin-left: 170px;
     }
 }
+
+
+/* menu grande */
+/* Auto Layout */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 50px;
+  
+    position: absolute;
+    width: 270px;
+    height: 1708px;
+    left: 0px;
+    top: 0px;
+  
+    /* background: #262626; */
+    background-color: #262626;
+    border-right: 4px solid #eee;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23086b3b' fill-opacity='0.19' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #616161;
+    /* box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25); */
+  }
+  
+  /* menu_principal */
+  .menuprincipal .flex-column{
+    position: absolute;
+    width: 105.73px;
+    height: 203.76px;
+    left: 70px;
+    top: 250px;
+    font-family:  Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 70px;
+    color: #79CBBD;
+  }
 
