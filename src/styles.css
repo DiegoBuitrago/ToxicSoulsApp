@@ -10,7 +10,7 @@
   margin: .0em auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 12em;
+  gap: .1em;
 }
 
 .container .home {
